@@ -10,6 +10,7 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
+    
 
     /**
      * The attributes that are mass assignable.
@@ -20,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'telephone',
     ];
 
     /**
@@ -43,5 +45,17 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    // Un utilisateur peut avoir plusieurs réservations
+    public function reservations()
+    {
+        return $this->hasMany(Reservation::class);
+    }
+
+    // Un utilisateur peut faire plusieurs commentaires
+    public function commentaires()
+    {
+        return $this->hasMany(Commentaire::class);
     }
 }
