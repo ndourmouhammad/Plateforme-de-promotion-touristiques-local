@@ -120,6 +120,12 @@ body {
     margin-top: 50px;
 }
 
-form input {
-    width: 300px;
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .contact-info {
+    display: flex;
+    gap: 15rem;
 }
