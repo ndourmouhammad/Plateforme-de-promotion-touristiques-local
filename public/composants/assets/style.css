@@ -1,20 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Lora", sans-serif;
     font-size: 14px;
-    line-height: 1.6;
+    
     margin: 0;
     padding: 0;
     background-color: #fff;
     color: #051d30;
+    
 }
 
 /* styles.css */
 .top-bar {
     background-color: #28a745; /* green color */
     color: white;
-    padding: 10px 0;
+   
 }
 
 .contact-info i {
@@ -127,5 +129,138 @@ body {
 
 .footer .contact-info {
     display: flex;
-    gap: 15rem;
+    align-items: center;
+    justify-content: center;
+
 }
+
+
+/* carrousel */
+.carousel-item {
+    height: 80vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+.carousel-caption {
+    bottom: 50%;
+    transform: translateY(50%);
+}
+.section-header {
+    text-align: center;
+    margin: 40px 0;
+}
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+.testimonial {
+    text-align: center;
+}
+.testimonial img {
+    border-radius: 50%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+}
+.carousel-caption h2 {
+    font-size: 62px;
+    font-weight: bolder;
+    
+   
+}
+.carousel-caption p {
+    font-size: 20px;
+    
+}
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+.section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+.section-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Lora", serif;
+    color: #FBB03B;
+}
+.section-header p {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Lora", serif;
+}
+.card-body {
+    text-align: start;
+}
+
+.card-body .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Lora", serif;
+    color: #2ECC71;
+}
+
+.card-body .card-text {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+}
+
+.card-body .btn-detail {
+    background-color: #FBB03B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500px;
+    font-family: "Mulish", serif;
+}
+.feature-card {
+    background-color: #2ECC71; /* Couleur de fond verte */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    min-height: 200px; /* Hauteur minimale pour uniformiser les cartes */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lora', serif;
+  }
+  .feature-card .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-card {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  .testimonial-card img {
+    border-radius: 50%;
+    border: 4px solid #2ECC71; /* Bordure verte autour de l'image */
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ajustement de l'image */
+    margin-bottom: 15px;
+  }
+  .testimonial-card h5 {
+    font-weight: bold;
+  }
+  .testimonial-card p {
+    color: #6c757d;
+  }
